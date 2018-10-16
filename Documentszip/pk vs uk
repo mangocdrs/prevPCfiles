@@ -1,0 +1,17 @@
+                                      Primary Key vs Unique Key
+
+
+              Primary Keys:
+                           1> is unique key
+  2> a table cannot have more than one primary key
+  3>  one or more table can make primary key
+  4> can not be a NULL value
+  5> create a clustered index
+
+             Unique Key
+
+   1>unique can be any colum having unique value but not pk colum
+
+    2> can have NULL values 
+    3> create a non cluster index                       
+                    

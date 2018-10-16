@@ -1,0 +1,33 @@
+$(document).ready(function(){
+
+
+
+	$("#myform").validate({
+        rules:{
+        	 username:{
+
+        	 	required:true
+        	 }
+              },
+
+errorPlacemnet: function(error,element)
+{
+	$(element).removeAttr('title' ,$(error.text()) );
+	$(element).removeClass("error");
+	$(element).tooltip({
+
+
+		content:$(error.text()),
+		position:{
+
+			my:"left top+15",
+			at: "right top",
+			collision: "flipfit"
+		},
+	});
+
+}
+	});
+
+});
+

@@ -1,0 +1,1 @@
+In simple words, window.load is called when all content of window is loaded whereas document.ready is called when DOM is loaded and document structure is ready.

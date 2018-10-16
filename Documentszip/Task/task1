@@ -1,0 +1,60 @@
+             RDBMS
+          CRUD
+
+        
+        Joins (inner,outer,left and right outer,self join)
+        Group by  and Having
+       Limit offset
+       varchar,char
+        int,text
+      utf-8 general ci
+      difference b/w innoDB and ISAM
+
+
+ New Task
+    Revise Database ALL concepts
+ 1> inner queries
+ 2> composite key
+  3> compound key
+ 4> A table can have one or more pk or not?
+ 5> what is Unique key
+ 6> agr id auto increment hai to insert kro agr id men to kya error aye ga
+    
+    agr table 10 tk hai to id 11 enter kro gy error dy ga ya nahe?
+    
+    agr koi random value do to kaya woo pir b error dy ga
+
+    varchar by default 255 ku laita hai agr 256 do gy tab kya ho ga
+    
+    isi char ka b krna hai
+      
+     difference between having and where clause
+
+     jab ap aggregate functions use krty ho to Having use hota hai
+
+     self join k scanario bnaooo r basic working kaisy hote hai.. like 2nd table kahan para hota hai
+
+
+
+
+
+
+
+what is meant by 
+
+1      table1 join table2   inner join 
+
+
+2      table1, table2        inner join
+
+3      table1 left table2    left outer join
+
+
+Answers
+
+Before Mysql version 5.0.3 Varchar datatype can store 255 character, but from 5.0.3 it can be store 65,535 characters.
+ BUT it has a limitation of maximum row size of 65,535 bytes. It means including all columns it must not be more than 65,535 bytes
+
+   
+
+    

@@ -1,0 +1,4 @@
+Fixed length means having a set length that never varies. 
+In database systems, a field can have a fixed or a variable length. 
+A variable-length field is one whose length can be different in each record, 
+depending on what data is stored in the field.

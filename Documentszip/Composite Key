@@ -1,0 +1,7 @@
+   what is Composite key?
+
+
+ is a combination of two attributes or columns in a table that can be use to uniquely idenfity each row of the table .
+ uniqeness granted when these columns are combined
+
+otherwise indivisually columns can not granted for uniquness .

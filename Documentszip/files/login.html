@@ -1,0 +1,81 @@
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+    	 	Join The Map
+    </title>
+
+    
+    <link href="bootstrap.min.css" rel="stylesheet">
+  <!--   <link href="https://www.jointhemap.com/r/manage/font-awesome/css/font-awesome.css" rel="stylesheet"> -->
+
+<!--     <link href="https://www.jointhemap.com/r/manage/css/animate.css" rel="stylesheet">
+    <link href="https://www.jointhemap.com/r/manage/css/style.css" rel="stylesheet"> -->
+
+	 <script src="jquery-3.3.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <!-- 	<script src="https://www.jointhemap.com/r/manage/js/jquery.bootstrap-growl.js" type="text/javascript"></script> -->
+
+
+    <script type="text/javascript" src="jquery.validate.js"></script>
+	<script type="text/javascript" src="jquery-validate.bootstrap-tooltip.js"></script>
+
+</head><body class="gray-bg">
+	
+<div class="middle-box text-center loginscreen animated fadeInDown">
+        <div>
+            <div>
+           		<img src="https://www.jointhemap.com/r/images/logo.png" style="width:104px;"/>
+            </div>
+           <form  autocomplete="off" class="m-t" role="form" id="loginform" action="https://www.jointhemap.com/login_content/login_validate" name="loginform" method="post">
+                <div class="form-group">
+                    <input type="text" autocomplete="off" class="form-control" placeholder="Enter Username" name="username" id="username" value="">
+                </div>
+                <div class="form-group">
+                    <input autocomplete="new-password" type="password" class="form-control" placeholder="Password" id="password" name="password" value="">
+                </div>
+                 <div class="form-group">
+                <button type="submit" class="btn btn-primary block full-width m-b">Login</button>
+                <!-- <div class="form-group"><a href="register"><small>SignUp?</small></a>
+				</div>
+             	<div class="form-group">
+					<a href="https://www.jointhemap.com/login/forgotpassword"><small>forget password</small></a>
+	         	</div> -->
+            </form>
+            <p class="m-t"> <small>Join the Map &copy; 2018</small> </p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    
+    // $.validator.addMethod("notEqual", function(value, element, param) {
+    //     return this.optional(element) || value != param;
+    // });
+    // $.validator.addMethod("Email", function(value, element) {
+	   //          return this.optional(element) |/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(value);
+	   //      }, "Invalid Email Address.");
+	 
+        $("#loginform").validate({
+            rules: {
+					  username: {required: true,
+					  			Email:true},
+					  password: {required: true},
+					  },
+					  messages: {
+					                username:{required: "Username Required",
+					                		  Email: "Email Not Valid "},
+					                password:{required:"Password Required"},
+					            },
+					            tooltip_options: {
+					                username: {placement:'top',html:true},
+					                password: {placement:'top',html:true},
+					          
+					            }
+					});  
+</script>
+</body>
+
+</html>

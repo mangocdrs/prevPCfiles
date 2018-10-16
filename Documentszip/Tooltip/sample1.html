@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	
+ .error { border: 1px solid #b94a48!important; background-color: #fee!important; }
+#myform {
+  width: 600px;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="jquery-ui.css">
+	<title>Jquery</title>
+	<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery-ui.js"></script>
+<script type="text/javascript" src="jquery-ui.min.js"></script>
+<script type="text/javascript" src="jquery.validate.js"></script>
+
+</head>
+<body>
+	<br>
+	<br>
+	<br>
+	<form id="myform" method="post">
+<label for="username"></label>
+<input id="amount" name="username" title="" >
+<br>
+<br>
+<label for="usermail"></label>
+<input  name="usermail"  title="" >
+<br>
+
+<br>
+<button type="submit">button</button>
+</form>
+ <script type="text/javascript" src="jquery.js"></script>
+ <script type="text/javascript" src="jquery.validate.js"></script>
+<script type="text/javascript" src="jquery-ui.js"></script>
+<script type="text/javascript" src="jquery-ui.min.js"></script>
+
+
+
+<script>
+$(document).ready(function () {
+
+    // initialize tooltipster on text input elements
+    $('#myform input[type="text"]').tooltipster({
+        trigger: 'custom',
+        onlyOne: false,
+        position: 'right'
+    });
+
+    // initialize validate plugin on the form
+    $('#myform').validate({
+        errorPlacement: function (error, element) {
+            $(element).tooltip('update', $(error).text());
+            $(element).tooltip('show');
+        },
+        success: function (label, element) {
+            $(element).tooltipster('hide');
+        },
+        rules: {
+            username: {
+                required: true,
+                email: true
+            },
+            usermail: {
+                required: true,
+                minlength: 5
+            }
+        },
+        submitHandler: function (form) { // for demo
+            alert('valid form');
+            return false;
+        }
+    });
+
+});
+
+	</script>
+</body>
+
+
+</html>

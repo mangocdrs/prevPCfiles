@@ -1,0 +1,24 @@
+             difference between innoDB and MYISAM
+
+            innoDB :
+
+1>row level locking
+2>implements transaction,fk and relationship constraints
+3>locks particular row in tha table
+4>it provide the standard ACID-compilant transaction features along with the fk support
+5>designed for high performance when processing large data
+6>support fk thats why we call MYSQL with innoDB RDBMS
+7>InnoDB stores its tables and indexes in a tablespace
+8>InnoDB supports transaction. You can commit and rollback with InnoDB
+
+
+            MYISAM
+1>full table level locking
+2>does not implement transaction, fk and relationship constraints
+3>lock entire mysql table
+4>designed for need for speed
+5>does not support fk that why we call MYSQL with MYISAM DBMS
+6>MyISAM stores its tables, data and indexes in diskspace using separate three different files. (tablename.FRM, tablename.MYD, tablename.MYI)
+7>MYISAM not supports transaction. You cannot commit and rollback with MYISAM. Once you issue a command it’s done.
+
+

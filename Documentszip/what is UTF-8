@@ -1,0 +1,30 @@
+what is utf?
+
+ 
+> is used to encode text or any language
+> a variable size encoding
+> used to encode 1 to 4 b byte unicode
+
+ unicode
+
+>code characters to any language
+>one code point per character
+
+ utf-8
+
+>variable sized encoding
+>1 byte encoding
+>encode only characters form 0 to 127
+> 2 bytes 128 to 2017
+
+
+what is utf8_general_ci
+
+utf8_general_ci is a legacy collation that does not support expansions, contractions, or ignorable characters. 
+It can make only one-to-one comparisons between characters
+
+
+what is collation:
+
+A collation is a set of rules that defines how to compare and sort character strings. Each collation in MySQL belongs to a single character set. Every character set has at least one collation, and most have two or more collations. A collation orders characters based on weight
+

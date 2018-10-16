@@ -1,0 +1,21 @@
+     
+             DBMS
+      1> use files to store data but have tables in DBMS
+     but no relationship between tables
+     2> does not support normilaztion
+     3> does not supply any security in manipulation of data
+     4> does not supply distributed database
+     5> small data and small organization and support only single user
+     6> example of Dbms is fiel system and xml
+
+    
+      RDBMS 
+ 1> use tabular form for storing data
+ 2>the tables will have an identifier called primary key.
+ 3> Normalization 
+ 4> does not support distributed database systems
+ 5>handle large ammount of  data
+ 6>example of RDBMS is mysql,sqlserver,postrege and oracle
+
+
+

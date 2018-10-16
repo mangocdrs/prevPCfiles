@@ -1,0 +1,3 @@
+symbolic link:
+
+sudo ln -s /home/user/workspace/rsvp/ /var/www/html/
