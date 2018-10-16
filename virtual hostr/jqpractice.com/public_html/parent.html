@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="all.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<title>children mehtod</title>
+</head>
+
+
+
+<body>
+<div><p>Hello</p></div>
+<div class="selected">
+	<div>new p</div><p>Hello Again</p></div>
+</body>
+
+
+<script type="text/javascript">
+
+$( "p" ).parent( ".selected" ).css( "background", "yellow" );
+
+
+
+</script>
+</html>

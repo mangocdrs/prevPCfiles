@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="all.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<title>jquery practice</title>
+</head>
+
+
+
+<body>
+
+	<form>
+	<button type="button">Useless</button>
+	<button type="button">Free </button>
+
+	<button>another button</button>
+	
+	
+	 <input type="button" value="Input Button">
+
+</form>
+</body>
+
+
+<script type="text/javascript">
+var input = $( ":button" ).addClass( "marked" );
+$( "div" ).text( "For this type jQuery found " + input.length + "." );
+// Prevent the form from submitting
+$( "form" ).submit(function( event ) {
+  event.preventDefault();
+});
+
+
+
+</script>
+</html>

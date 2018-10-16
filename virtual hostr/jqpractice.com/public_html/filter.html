@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	
+	
+      <script src="jquery.js"></script>
+	<title>jquery practice</title>
+</head>
+
+
+
+<body>
+
+<div style="background-color:green;width: 100px;height: 100px; padding: 10px; margin: 10px;" class="vip">
+
+</div>
+<div style="background-color:green;width: 100px;height: 100px; padding: 10px; margin: 10px;">
+
+</div>
+
+<div style="background-color:green;width: 100px;height: 100px;padding: 10px; margin: 10px;">
+
+</div>
+
+<div class="vip" style="background-color:green;width: 100px;height: 100px;padding: 10px; margin: 10px;">
+
+</div>
+<br>
+<ul>
+  <li>list item 1</li>
+  <li>list item 2</li>
+  <li>list item 3</li>
+  <li>list item 4</li>
+  <li>list item 5</li>
+  <li>list item 6</li>
+</ul>
+
+<script>
+
+// $("li").filter(":even").css("background-color","green");
+
+// $("div")
+// .filter(".vip")
+// .css("border-color","black");
+
+
+$( "div" )
+  .css( "background", "#c8ebcc" )
+  .filter( ".vip" )
+    .css( "border-color", "red" );
+ 
+
+
+   
+
+</script>
+</body>
+
+
+
+
+</html>

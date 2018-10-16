@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+
+		span
+		{
+			display: none;
+		}
+	</style>
+	<title>jqueryp</title>
+<!-- <link rel="stylesheet" href="all.css"> -->
+	<script type="text/javascript" src="jquery.js"></script>
+
+
+</head>
+
+<body>
+
+<input>
+
+<span>Nice to meet you!</span>
+<p>Click in the input field to get focus.</p>
+
+</body>
+
+
+<script type="text/javascript">
+
+	$(document).ready(function(){
+   $("input").focus();
+    $(":focus").css("background-color", "yellow");
+    });
+
+</script>
+
+</html>

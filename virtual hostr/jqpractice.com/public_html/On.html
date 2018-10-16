@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+	</style>
+	<title>jqueryp</title>
+<!-- <link rel="stylesheet" href="all.css"> -->
+	<script type="text/javascript" src="jquery.js"></script>
+
+
+</head>
+
+<body>
+	
+<ul>
+  <li>list item 1</li>
+  <li>list item 2</li>
+  <ul>
+  	<li>child item </li>
+  		<li>child item
+  		</li>
+  	</ul>
+  <li>list item 3</li>
+  <li>list item 4</li>
+  <li>list item 5</li>
+</ul>
+
+<button id="btnr">clicke to remove events</button>
+
+<button id="btno">clcik to add on event</button>
+</body>
+<script type="text/javascript">
+
+$(document).ready(function(){
+$("li").on("click" , function(){
+
+alert("unorder list clicked by user")
+
+
+});
+
+});
+
+
+</script>
+
+</html>

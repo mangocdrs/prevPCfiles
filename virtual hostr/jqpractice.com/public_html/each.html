@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="all.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js">
+	</script>
+	<title>jquery practice</title>
+</head>
+
+
+
+<body>
+
+<ul>
+	
+	<li>Kaleem</li>
+	<li> Talha</li>
+	<li> Shani</li>
+	<li> Raja</li>
+	<li> XYZ</li>
+</ul>
+
+
+<script type="text/javascript">
+
+	$("li").each(function(index){
+
+console.log(index + ":" + $(this).text());
+
+	})
+
+</script>
+</html>

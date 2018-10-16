@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jqueryp</title>
+<!-- <link rel="stylesheet" href="all.css"> -->
+	<script type="text/javascript" src="jquery.js"></script>
+
+
+</head>
+
+<body>
+<ul>
+  <li class="abc" style="background-color: red">list item 1</li>
+  <li>list item 2
+    <ul>
+      <li class="abc" style="background-color: red">list item 2-a</li>
+      <li>list item 2-b</li>
+    </ul>
+  </li>
+  <li>list item 3</li>
+  <li>list item 4</li>
+</ul>
+</body>
+<script type="text/javascript">
+  $( ".abc" ).hide("slow");
+  
+	// $( ".abc" ).hide("slow").fadeOut(4000);
+</script>
+
+</html>

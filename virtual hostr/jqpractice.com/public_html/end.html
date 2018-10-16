@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="all.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js">
+	</script>
+	<title>jquery practice</title>
+</head>
+
+
+
+<body>
+<ul class="first">
+  <li class="foo">list item 1</li>
+  <li>list item 2</li>
+  <li class="bar">list item 3</li>
+</ul>
+<ul class="second">
+  <li class="foo">list item 1</li>
+  <li>list item 2</li>
+  <li class="bar">list item 3</li>
+</ul>
+
+<p> <span>Hello</span> how are you?</p>
+
+</body>
+
+
+
+<script type="text/javascript">
+
+$( "ul.first" )
+  .find( ".foo" )
+    .css( "background-color", "red" )
+  .end()
+  .find( ".bar" )
+    .css( "background-color", "green" );
+
+   
+
+</script>
+</html>

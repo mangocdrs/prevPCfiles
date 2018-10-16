@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	
+	
+      <script src="jquery.js"></script>
+	<title>jquery practice</title>
+</head>
+
+
+
+<body>
+
+
+<p> Hello how are you?</p>
+<button class="fi" >Fade 0ut</button>
+<button class="ft" >Fade To</button>
+
+<script>
+
+  $(".ft").click(function(){
+        // $("p").fadeTo("slow",0.5)
+        $("p").fadeTo("fast",0.33 ); 
+    });
+ 
+
+
+    $(".fi").click(function(){
+        $("p").fadeOut("slow")
+    });
+ 
+
+
+   
+
+</script>
+</body>
+
+
+
+
+</html>

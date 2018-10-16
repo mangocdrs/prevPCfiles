@@ -1,0 +1,32 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jqueryp</title>
+<!-- <link rel="stylesheet" href="all.css"> -->
+	<script type="text/javascript" src="jquery.js"></script>
+
+
+</head>
+
+<body>
+	<div>
+<p> THis is p</p>
+</div>
+</body>
+<script type="text/javascript">
+ $("p").click(function(){
+
+if($("p").parent().is("div"))
+{
+	alert("p parent is div");
+
+}
+	});
+
+</script>
+
+</html>

@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+	img
+	{
+		display: none;
+	}	
+
+
+	</style>
+  <link rel="stylesheet" href="all.css">
+  <script type="text/javascript" src="jquery.js"></script>
+  <title>left scroll</title>
+</head>
+
+
+
+<body>
+
+<ul>
+	
+  <li>list item 1</li>
+  <li>list item 2</li>
+  <li class="third-item">list item 3</li>
+  <li>list item 4</li>
+  <li>list item 5</li>
+</ul>
+
+<ul>
+		<li>#</li>
+		<li>&</li>
+		<li>%</li>
+	</ul>
+</body>
+<script>
+$(".third-item").siblings().css("background-color" ,"cyan");
+
+</script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+	</style>
+	<title>jqueryp</title>
+<!-- <link rel="stylesheet" href="all.css"> -->
+	<script type="text/javascript" src="jquery.js"></script>
+
+
+</head>
+
+<body>
+	
+<p>this is paragraph 1</p>
+<p>this is paragraph 2</p>
+<p>this is paragraph 3</p>
+<button id="btnr">clicke to remove events</button>
+
+<button id="btno">clcik to add on event</button>
+</body>
+<script type="text/javascript">
+
+
+
+$(document).ready(function(){
+    $("p").one("click", function(){
+        $(this).animate({fontSize: "+=6px"});
+    });
+});
+
+
+
+
+
+</script>
+
+</html>

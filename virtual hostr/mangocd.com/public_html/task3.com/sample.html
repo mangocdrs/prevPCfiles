@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>testing js</title>
+</head>
+<script type="text/javascript" src="javascript/jquery.js"></script>
+<script type="text/javascript" src="javascript/jquery.js"></script>
+<script type="text/javascript" src="javascript/jquery.min.js"></script>
+<body>
+<form id="myform">
+
+	<input type="text" name="username" id="textname">
+	<br>
+	<br>
+	<input type="text"  name="upassword">
+	<button type="submit" >submit</button>
+
+
+</form>
+<script>
+	$("#myform").validate({
+     rules:{
+       username:{
+
+          required: true,
+          max: 8,
+       },
+       upassword:{
+
+       	required: true
+       }
+        
+       }
+
+     });
+	</script>
+</body>
+</html>

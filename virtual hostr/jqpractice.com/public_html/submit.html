@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+	</style>
+	<title>jqueryp</title>
+<!-- <link rel="stylesheet" href="all.css"> -->
+	<script type="text/javascript" src="jquery.js"></script>
+
+
+</head>
+
+<body>
+ 
+<p>Type 'correct' to validate.</p>
+<form action="javascript:alert( 'success!' );">
+  <div>
+    <input type="text">
+    <input type="submit">
+  </div>
+</form>
+<span></span>
+</body>
+<script type="text/javascript">
+
+$("form").submit(function(event){
+
+
+	if($("input:first").val() == "correct")
+{
+$("span").text("validated").show();
+return;
+}
+
+
+$("span").text("Not valid ....").show();
+event.preventDefault();
+});
+
+</script>
+
+</html>

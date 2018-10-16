@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="all.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<title>jquery practice</title>
+</head>
+
+
+
+<body>
+
+<div id="boo">
+	Click to test<div>
+</body>
+
+
+<script type="text/javascript">
+
+	// $("img") .attr ("width", "500");
+
+// 	$("#boo"). bind ("click" , function(){
+
+// alert("user click on 'boo' ");
+
+// 	}) ;
+$( "#boo" ).bind({
+
+click: function(){
+
+$(this).addClass("active");
+
+},
+mouseenter: function()
+{
+	$(this).addClass("in");
+
+},
+mouseleave: function()
+{
+	$(this).removeClass("out");
+}
+
+
+
+});
+
+
+</script>
+</html>
